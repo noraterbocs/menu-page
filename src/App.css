@@ -109,6 +109,7 @@ margin:0 auto 0 auto;
   .menu-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-items: center;
   }
 
   .menu-item {
