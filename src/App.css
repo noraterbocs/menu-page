@@ -1,0 +1,132 @@
+
+.main {
+  display: block;
+  text-align: center;
+  align-items: center;
+  color: #373C47;
+}
+
+.underline{
+width: 5rem;
+height: 0.25rem;
+background: darkgoldenrod;
+margin:0 auto 0 auto;
+}
+
+.menu-items {
+  display:flex;
+  gap: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 2rem 1rem 2rem; 
+}
+
+.menu-item{
+  box-shadow: var(--light-shadow);
+  background-color: var(--clr-offwhite);
+  max-width: 500px;
+  min-width: 260px;
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items:center;
+  padding:0 3% 0 2%;
+}
+
+.img{
+  aspect-ratio: 16/9;
+  width: 150px;
+  /* margin: 8% 5% 5% 5%; */
+  object-fit:cover;
+  border-radius: var(--radius);
+  border-style: solid;
+  border-color: goldenrod;
+  margin: 5px 0 5px 0;
+}
+
+.header{
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size: small;
+  text-transform: capitalize;
+  border-bottom: 0.5px dotted red;
+  margin: 8% 5% 5% 5%;
+}
+
+.price {
+  color: darkgoldenrod;
+}
+
+.description{
+  font-size: x-small;
+  text-align: justify;
+}
+
+.btn-wrap{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+
+}
+.btn{
+  text-transform: capitalize;
+  margin: 4% 0 4% 0;
+  border-color:transparent;
+  background-color: transparent;
+  color:darkgoldenrod;
+  font-size: larger;
+}
+
+@media only screen and (min-width: 750px) {
+
+  .menu-item {
+    font-size: large;
+    max-width: 800px;
+    max-height: 500px;
+  }
+
+  .header {
+    font-size: large;
+  }
+
+  .description {
+    font-size: large;
+  }
+
+  .img {
+    width: 300px;
+    height: 200px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .menu-item {
+    font-size: large;
+    max-width: 800px;
+    max-height: 500px;
+  }
+
+  .header {
+    font-size: large;
+  }
+
+  .description {
+    font-size: large;
+  }
+
+  .img {
+    width: 300px;
+    height: 200px;
+  }
+}
